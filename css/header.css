@@ -169,6 +169,25 @@
   .logo { font-size: 1.1rem; }
   .menu { display: flex; }
 
+  /* Troca logo no mobile */
+  .logo img {
+    display: none; /* esconde a imagem padrão */
+  }
+  .logo span {
+    display: none; /* esconde o texto */
+  }
+  .logo {
+    width: 100px;   /* largura fixa */
+    height: 100px;  /* altura fixa */
+    border-radius: 10px;
+    border: solid red;
+
+    background-image: url("/img/logo.srpromocoes.PNG");
+    background-size: contain;   /* mostra a imagem inteira */
+    background-repeat: no-repeat;
+    background-position: center; /* centraliza a imagem */
+  }
+
   /* Menu escondido por padrão */
   .header nav ul {
     flex-direction: column;
