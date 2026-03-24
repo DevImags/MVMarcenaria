@@ -1,49 +1,28 @@
-
-
-
-:root{
-  --aff-blue: #0b5ed7;
-  --aff-blue-dark: #003a8f;
-  --aff-bg: #062c43;
-  --aff-card: rgba(255,255,255,0.06);
-  --aff-card-strong: rgba(255,255,255,0.10);
-  --aff-border: rgba(255,255,255,0.14);
-  --aff-text: #eaf3ff;
-  --aff-muted: rgba(234,243,255,0.72);
-  --aff-yellow: #ffcc00;
-  --aff-shadow: 0 10px 30px rgba(0,0,0,0.25);
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+  min-height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#f2f2f2;
+  padding:5px;
 }
 
-html, body {
+a{
+  display:block;
+  width:100%;
+  max-width:700px;
+}
+
+img {
+  max-width: 40%;
+  max-height: 100vh;
   height: auto;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-
-  /* Gradiente diagonal mais intenso */
-  background: linear-gradient(
-    to bottom right,
-    rgb(55, 0, 255) 0%,   /* azul claro - amanhecer */
-    rgb(55, 0, 255) 25%,  /* intermediário */
-    rgb(55, 0, 255) 50%,  /* meio do dia */
-    rgb(0, 0, 0) 75%,  /* escurecendo */
-    rgb(0, 0, 0) 100%  /* azul profundo - anoitecer */
-  );
-
-  color: #ffffff;
-}
-
-
-a {
-  text-decoration: none;
 }
