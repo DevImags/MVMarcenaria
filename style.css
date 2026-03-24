@@ -6,23 +6,24 @@
 
 body{
   min-height:100vh;
-
   display:flex;
   align-items:center;
   justify-content:center;
-
   background:#f2f2f2;
   padding:5px;
 }
 
-a{
-  display:block;
-  width:100%;
-  max-width:700px;
+/* O link agora assume o papel de centralizador */
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none; /* Remove sublinhados indesejados */
 }
 
 img {
   max-width: 40%;
-  max-height: 100vh;
   height: auto;
+  display: block; /* Remove o espaço extra abaixo da imagem */
 }
